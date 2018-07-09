@@ -1,7 +1,4 @@
-a = 10
-b = 15
-a += b
-print(a)
+
 a = 10
 b = 15
 a = b
@@ -24,8 +21,8 @@ print(b)
 a = "Welcome"
 b = "Home"
 print(a,b)
-a="Welcome"
-b="Home"
+a = "Welcome"
+b = "Home"
 print(a+b)
 a = "10"
 b = "15"
@@ -35,6 +32,7 @@ print(d)
 bread_price = 2.00
 cheese_price = 3.00
 print((bread_price * 2) + (cheese_price * 3))
+
 print("What is your age?")
 a = input("Enter you knight's name:")
 b = input("Enter a characteristic:")

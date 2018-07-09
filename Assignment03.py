@@ -6,18 +6,18 @@ e = "Two"
 f = "Three"
 g = "one"
 
-a > b #False
-a == b #False
-a != b #True
-b == c #True
-d < e #True
-e < f #True
-d < g #False
-g < e #True
-not (a == b) #True
-b < c or b > c #False
-(a+1) == b and not b < c #True
-((a <= b) and (b <= c)) or ((a >= b) and (b >= c)) #False
+a > b # False
+a == b # False
+a != b # True
+b == c # True
+d < e # True
+e < f # True
+d < g # False
+g < e # True
+not (a == b) # True
+b < c or b > c # False
+(a+1) == b and not b < c # True
+((a <= b) and (b <= c)) or ((a >= b) and (b >= c)) # False
 total_cost = 100.00
 days = 3
 cost_per_day = total_cost / days
