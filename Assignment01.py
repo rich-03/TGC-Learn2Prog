@@ -1,0 +1,11 @@
+print (1+2+3+4+5)
+print (3**2 + 4**2)
+print (3*(5+2))
+#print(100)
+print (1/2 + 1/2)
+print (1//2 + 1//2)
+print (3985780149 % 2)
+print (8*12)
+print (180/7)
+print ("I love Python!")
+#First Program
