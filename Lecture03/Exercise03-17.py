@@ -1,12 +1,9 @@
-if (year % 100):
+year = 2018
+if year % 400 == 0:
+    print("Leap year")
+elif year % 100 == 0:
     print("Not a leap year")
-elif (year % 400):
+elif year % 4 == 0:
     print("Leap year")
-elif (2000 % 400):
-    print("Leap year")
-elif (2100 % 100, 2100 % 400):
-    print("Not a leap year")
-elif (2004 % 4, 2004 % 100):
-    print("Leap year")
-elif (2001 % 4):
+else:
     print("Not a leap year")
