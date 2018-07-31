@@ -16,7 +16,7 @@ for line in infile:
     year = int(y)
     # Put data into list
     datalist.append([day, month, year, lowtemp, hightemp, rainfall])
-# Close FIle
+# Close File
 infile.close()
 ########## Analyze Data ##########
 # Get date of interest
@@ -33,6 +33,7 @@ maxsofar = -100
 numgooddates = 0
 sumofmin = 0
 sumofmax = 0
+raindays = 0
 for singleday in gooddata:
     numgooddates += 1
     sumofmin += singleday[1]
@@ -42,11 +43,15 @@ for singleday in gooddata:
         minsofar = singleday[1]
     if singleday[2] > maxsofar:
         maxsofar = singleday[2]
+    if singleday[3] >0:
+        raindays += 1
 avglow = sumofmin / numgooddates
 avghigh = sumofmax / numgooddates
+rainpercent = raindays / numgooddates * 100
 ########## Present Results ##########
 print("There were", numgooddates, "days")
 print("The lowest temperature on record was", minsofar)
 print("The highest temperature on record was", maxsofar)
 print("The average low has been", avglow)
 print("The average high has been", avghigh)
+print("The chance of rain is", rainpercent, "%")
